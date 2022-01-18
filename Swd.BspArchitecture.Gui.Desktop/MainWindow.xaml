@@ -11,4 +11,5 @@
         <Label x:Name="lblTextToShow" Content="Label" HorizontalAlignment="Left" Margin="38,168,0,0" VerticalAlignment="Top" Width="321"/>
 
     </Grid>
+
 </Window>

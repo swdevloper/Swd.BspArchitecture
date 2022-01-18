@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Sql;
 using System.Data.OleDb;
-using Swd.BspArchitecture.Repository.Textfile;
+
 
 namespace Swd.BspArchitecture.Repository
 {
@@ -16,11 +16,28 @@ namespace Swd.BspArchitecture.Repository
 
         public string GetData()
         {
-
+            DataSource datasource = DataSource.Textfile;
             string returnValue = string.Empty;
 
-            DataManager manager = new DataManager();
-            returnValue = manager.ReadData();
+            switch (datasource)
+            {
+                case DataSource.Memory:
+                    break;
+                case DataSource.Textfile:
+                    Textfile.DataManager dataManagerTextFile = new Textfile.DataManager();
+                    returnValue = dataManagerTextFile.ReadData();
+                    break;
+                case DataSource.XmlFile:
+                    XmlFile.DataManager dataManagerXmlFile = new XmlFile.DataManager();
+                    returnValue = dataManagerXmlFile.ReadData();
+                    break;
+                case DataSource.Database:
+                    Database.DataManager dataManagerDatabase = new Database.DataManager();
+                    returnValue = dataManagerDatabase.ReadData();
+                    break;
+                default:
+                    break;
+            }
 
             return returnValue;
         }
