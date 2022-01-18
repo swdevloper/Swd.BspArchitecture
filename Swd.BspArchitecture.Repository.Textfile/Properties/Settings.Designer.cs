@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Swd.BspArchitecture.Repository.Properties {
+namespace Swd.BspArchitecture.Repository.Textfile.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")]
-    public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
@@ -25,10 +25,10 @@ namespace Swd.BspArchitecture.Repository.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("30")]
-        public int DataSource {
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Projekte\\SWDeveloper2021\\Swd.Daten\\Repository.txt")]
+        public string PathToTextfile {
             get {
-                return ((int)(this["DataSource"]));
+                return ((string)(this["PathToTextfile"]));
             }
         }
     }

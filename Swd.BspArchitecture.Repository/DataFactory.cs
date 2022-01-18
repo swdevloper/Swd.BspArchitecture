@@ -16,7 +16,8 @@ namespace Swd.BspArchitecture.Repository
 
         public string GetData()
         {
-            DataSource datasource = DataSource.Textfile;
+            DataSource datasource = (DataSource)Properties.Settings.Default.DataSource;
+            
             string returnValue = string.Empty;
 
             switch (datasource)
