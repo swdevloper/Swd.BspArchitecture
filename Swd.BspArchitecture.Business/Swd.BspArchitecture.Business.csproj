@@ -55,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model.csproj">
+      <Project>{9310511f-6f51-4d73-87cc-692e2cbb8aef}</Project>
+      <Name>Swd.BspArchitecture.Business.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Swd.BspArchitecture.Repository\Swd.BspArchitecture.Repository.csproj">
       <Project>{221f1b9e-5238-40a6-87c2-44256bbb2446}</Project>
       <Name>Swd.BspArchitecture.Repository</Name>

@@ -62,6 +62,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model.csproj">
+      <Project>{9310511f-6f51-4d73-87cc-692e2cbb8aef}</Project>
+      <Name>Swd.BspArchitecture.Business.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Swd.BspArchitecture.Repository.Database\Swd.BspArchitecture.Repository.Database\Swd.BspArchitecture.Repository.Database.csproj">
       <Project>{a658cd71-8f39-4556-a838-9238263706ea}</Project>
       <Name>Swd.BspArchitecture.Repository.Database</Name>

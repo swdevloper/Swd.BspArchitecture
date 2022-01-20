@@ -25,7 +25,7 @@ namespace Swd.BspArchitecture.Repository.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("40")]
         public int DataSource {
             get {
                 return ((int)(this["DataSource"]));

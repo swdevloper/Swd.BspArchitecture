@@ -106,6 +106,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model.csproj">
+      <Project>{9310511f-6f51-4d73-87cc-692e2cbb8aef}</Project>
+      <Name>Swd.BspArchitecture.Business.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Swd.BspArchitecture.Business\Swd.BspArchitecture.Business.csproj">
       <Project>{44c2a42f-0338-4b10-bcc9-93f119636655}</Project>
       <Name>Swd.BspArchitecture.Business</Name>
