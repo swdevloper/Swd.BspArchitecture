@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.BspArchitecture.Reposit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.BspArchitecture.Repository.Database", "Swd.BspArchitecture.Repository.Database\Swd.BspArchitecture.Repository.Database\Swd.BspArchitecture.Repository.Database.csproj", "{A658CD71-8F39-4556-A838-9238263706EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.BspArchitecture.Business.Model", "Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model\Swd.BspArchitecture.Business.Model.csproj", "{9310511F-6F51-4D73-87CC-692E2CBB8AEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A658CD71-8F39-4556-A838-9238263706EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A658CD71-8F39-4556-A838-9238263706EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A658CD71-8F39-4556-A838-9238263706EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9310511F-6F51-4D73-87CC-692E2CBB8AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9310511F-6F51-4D73-87CC-692E2CBB8AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9310511F-6F51-4D73-87CC-692E2CBB8AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9310511F-6F51-4D73-87CC-692E2CBB8AEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

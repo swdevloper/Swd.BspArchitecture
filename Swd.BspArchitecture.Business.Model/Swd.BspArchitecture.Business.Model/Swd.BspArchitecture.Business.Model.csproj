@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A658CD71-8F39-4556-A838-9238263706EA}</ProjectGuid>
+    <ProjectGuid>{9310511F-6F51-4D73-87CC-692E2CBB8AEF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Swd.BspArchitecture.Repository.Database</RootNamespace>
-    <AssemblyName>Swd.BspArchitecture.Repository.Database</AssemblyName>
+    <RootNamespace>Swd.BspArchitecture.Business.Model</RootNamespace>
+    <AssemblyName>Swd.BspArchitecture.Business.Model</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,12 +53,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataManager.cs" />
+    <Compile Include="ArchitectureModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchitectureModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArchitectureModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchitectureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArchitectureModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchitectureModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <DependentUpon>ArchitectureModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="ArchitectureModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ArchitectureModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ArchitectureModel.edmx.diagram">
+      <DependentUpon>ArchitectureModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArchitectureModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ArchitectureModel.edmx</DependentUpon>
+      <LastGenOutput>ArchitectureModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ArchitectureModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ArchitectureModel.edmx</DependentUpon>
+      <LastGenOutput>ArchitectureModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
