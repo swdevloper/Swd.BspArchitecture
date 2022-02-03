@@ -15,6 +15,7 @@ namespace Swd.BspArchitecture.Repository.Database
 
             Bsp_ArchitectureEntities db = new Bsp_ArchitectureEntities();
 
+
             foreach (Message item in db.Messages)
             {
                 var t = item.AnzeigeText;
